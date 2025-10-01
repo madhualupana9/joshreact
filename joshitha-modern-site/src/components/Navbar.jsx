@@ -16,18 +16,17 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '#home', active: true },
-    { 
-      name: 'About Us', 
+    {
+      name: 'About Us',
       href: '#about',
-      comingSoon: true,
       submenu: ['Corporate Profile', 'Director Profile', 'Key Management']
     },
-    { name: 'Services', href: '#services', comingSoon: true },
-    { name: 'Technology', href: '#technology', comingSoon: true },
-    { name: 'Clients', href: '#clients', comingSoon: true },
-    { name: 'Projects', href: '#projects', comingSoon: true },
-    { name: 'Careers', href: '#careers', comingSoon: true },
-    { name: 'News', href: '#news', comingSoon: true },
+    { name: 'Services', href: '#services' },
+    { name: 'Technology', href: '#technology' },
+    { name: 'Clients', href: '#clients' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Careers', href: '#careers' },
+    { name: 'News', href: '#news' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -79,11 +78,6 @@ const Navbar = () => {
                   }`}
                 >
                   {item.name}
-                  {item.comingSoon && (
-                    <span className="ml-1 px-1.5 py-0.5 text-[10px] bg-primary-500/20 text-primary-400 rounded">
-                      Soon
-                    </span>
-                  )}
                   {item.submenu && <ChevronDown className="w-3 h-3" />}
                 </a>
               </motion.div>
@@ -136,11 +130,6 @@ const Navbar = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
-                  {item.comingSoon && (
-                    <span className="ml-2 px-2 py-0.5 text-xs bg-primary-500/20 text-primary-400 rounded">
-                      Coming Soon
-                    </span>
-                  )}
                 </a>
               ))}
               <a
