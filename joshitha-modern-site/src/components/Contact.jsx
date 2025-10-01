@@ -121,7 +121,7 @@ const Contact = () => {
               <div className="text-center">
                 <MapPin className="w-12 h-12 text-primary-400 mx-auto mb-3" />
                 <p className="text-gray-400">Interactive Map</p>
-                <p className="text-sm text-gray-500">Coming Soon</p>
+                <p className="text-sm text-gray-500"></p>
               </div>
             </motion.div>
           </motion.div>

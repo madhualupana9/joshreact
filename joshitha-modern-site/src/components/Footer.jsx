@@ -77,7 +77,7 @@ const Footer = () => {
                     {link.name}
                     {link.comingSoon && (
                       <span className="px-2 py-0.5 text-[10px] bg-primary-500/20 text-primary-400 rounded">
-                        Soon
+                        
                       </span>
                     )}
                   </a>

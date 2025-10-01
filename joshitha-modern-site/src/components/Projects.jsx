@@ -213,7 +213,7 @@ const Projects = () => {
           >
             View All Projects
             <span className="ml-2 px-2 py-0.5 text-xs bg-primary-500/20 text-primary-400 rounded">
-              Coming Soon
+              
             </span>
           </motion.button>
         </motion.div>
